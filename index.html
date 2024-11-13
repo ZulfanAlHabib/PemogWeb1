@@ -4,70 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tugas </title>
+    <title>PT MOYA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<div class="header">
-    <div class="logo">
-        <h1><img src="moya indonesia.jpeg" alt="logo" width="160px" height="80px">Moya Indonesia</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+
+<body>
+    <header>
+        <div class="logo">MOYA</div>
+            <!-- <h1>MOYA</h1> -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <img src="moya indonesia.jpeg" alt="Service Image">
+            <br>
+            <br>
+            <h1>Selamat Datang di Perusahaan Kami</h1><div class="contact-section">
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <br>
+            <p>Menyediakan air bersih untuk kehidupan yang lebih baik
+                ​Sejak 2011, Moya Asia telah bermitra dengan badan usaha milik daerah (PDAM) di seluruh Indonesia,
+                meningkatkan dan mengelola operasi pengolahan air untuk menyediakan air yang aman dan andal. Dengan
+                kapasitas yang kini mencapai 32.000 liter per detik—atau satu triliun liter per tahun—kami berada di
+                garis depan dalam pengelolaan, pengolahan, transmisi, distribusi, dan layanan pelanggan air baku.</p>
+        </section>
+
+        <!-- Product/Service Section -->
+        <section class="services">
+            <h2>branch company:</h2>
+            <div class="service">
+                <img src="Moya Tangerang.jpg" alt="Service Image">
+                <h3>Moya Tangerang</h3>
+
+            </div>
+            <div class="service">
+                <img src="Moya Batam.jpg" alt="Service Image">
+                <h3>Moya Batam</h3>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2><br>
+            <p>Email: HRD@moyasia</p>
+            <p>Telepon: ​+62215210399</p>
+        </section>
+    </main>
+
+    <div class="contactsection">
+        <br>
+        <h2>Kritik dan Saran</h2>
+        <br>
+        <form id="suggestion-form" action="javascript:void(0);" method="POST" onsubmit="submitSuggestionForm()">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">Pesan Anda:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+    
+            <button type="submit">Kirim</button>
+        </form>
     </div>
-</div>
-<title>Moya Indonesia</title>
-<table border="1" width="250px" height="150px">
-    <thead>
-        <tr>
-            <td>Nama</td>
-            <td>Deskripsi-singkat</td>
-            <td>Harga</td>
-        </tr>
-    </thead>
-    <tbody align="center">
-        <tr>
-            <td>Jasa Pemasangan PDAM</td>
-            <td>Ini adalah jasa pemasangan PDAM atau air bersih untuk rumah yang ingin memasang</td>
-            <td>500.000 RP-1.500.000 RP</td>
+    </div>
 
+</body>
 
-            <div class="Deskripsi-singkat" id="About">
-                <p>Moya Holdings Asia Limited (yang disebut “Perusahaan” atau “Moya”, dan bersama anak perusahaannya,
-                    “Moya Grup”) adalah
-                    perusahaan holding investasi yang terdaftar secara publik yang berbasis di Singapura di Bursa
-                    Singapura. Melalui
-                    anak perusahaannya, Moya Grup memiliki bisnis dalam pengembangan infrastruktur air dan pengelolaan
-                    air bersih.</p>
+<footer>
+    <p>&copy; 2024 PT MOYA INDONESIA</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com/zulfan.alhabib">Facebook</a>
+        <a href="https://x.com/moyaasia">Twitter</a>
+        <a href="https://www.instagram.com/moyaasia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+    </div>
+</footer>
 
-
-            </div>
-            <div class="Button"></div>
-            <a
-                href="https://www.instagram.com/moyaasia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
-            <div class="footer">
-
-                <div class="Deskripsi-singkat" id="Layanan_Kami">
-                    <h1><img src="MOYA.jpg" alt="Layanan_Kami" width="300px" height="150px"></h1>
-                    <ul>
-                        <li>
-                            <h3>Layanan Kami</h3>
-                        </li>
-                    </ul>
-                    <p> PT kami melayani pengeloalaan PDAM dibeberapa wilayah di indonesia, seperti Jakarta,
-                        Tangerang, Bekasi, Semarang, Batam, dan lain lain.</p>
-
-                </div>
-                <form action="">
-                    <input type="text" placeholder="Nama">
-                    <input type="Pesan" placeholder="Pesan">
-                    <input type="Email" placeholder="Email">
-
-            </div>
-            </div>
-
-            <body>
-
-            </body>
+<script src="script.js"></script>
+</body>
 
 </html>
